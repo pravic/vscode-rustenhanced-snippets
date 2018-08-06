@@ -1,0 +1,21 @@
+{
+    "name": "rustenhanced-snippets",
+    "displayName": "RustEnhanced snippets",
+    "description": "Rust code snippets ported from the Sublime Text's package.",
+    "version": "0.0.1",
+    "publisher": "pravic",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "rust",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

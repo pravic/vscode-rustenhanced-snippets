@@ -1,0 +1,470 @@
+{
+	"allow": {
+		"prefix": "allow",
+		"body": "\n#[allow(dead_code)]\n",
+		"description": "[allow(dead_code)]",
+		"scope": "source.rust"
+	},
+	"allow1": {
+		"prefix": "allow",
+		"body": "\n#[allow(missing_docs)]\n",
+		"description": "[allow(missing_docs)]",
+		"scope": "source.rust"
+	},
+	"allow2": {
+		"prefix": "allow",
+		"body": "\n#[allow(non_camel_case_types)]\n",
+		"description": "[allow(non_camel_case_types)]",
+		"scope": "source.rust"
+	},
+	"allow3": {
+		"prefix": "allow",
+		"body": "\n#[allow(non_snake_case)]\n",
+		"description": "[allow(non_snake_case)]",
+		"scope": "source.rust"
+	},
+	"allow4": {
+		"prefix": "allow",
+		"body": "\n#[allow(non_upper_case_globals)]\n",
+		"description": "[allow(non_upper_case_globals)]",
+		"scope": "source.rust"
+	},
+	"allow5": {
+		"prefix": "allow",
+		"body": "\n#[allow(unused_imports)]\n",
+		"description": "[allow(unused_imports)]",
+		"scope": "source.rust"
+	},
+	"allow6": {
+		"prefix": "allow",
+		"body": "\n#[allow(unused_must_use)]\n",
+		"description": "[allow(unused_must_use)]",
+		"scope": "source.rust"
+	},
+	"allow7": {
+		"prefix": "allow",
+		"body": "\n#[allow(unused_parens)]\n",
+		"description": "[allow(unused_parens)]",
+		"scope": "source.rust"
+	},
+	"allow8": {
+		"prefix": "allow",
+		"body": "\n#[allow(unused_variables)]\n",
+		"description": "[allow(unused_variables)]",
+		"scope": "source.rust"
+	},
+	"cfg": {
+		"prefix": "cfg",
+		"body": "#[cfg(${1})]",
+		"description": "#[cfg(…)]",
+		"scope": "source.rust"
+	},
+	"cfg1": {
+		"prefix": "cfg",
+		"body": "#[cfg(all(${1}, ${2}))]",
+		"description": "#[cfg(all(…))]",
+		"scope": "source.rust"
+	},
+	"cfg2": {
+		"prefix": "cfg",
+		"body": "#[cfg(any(${1}, ${2}))]",
+		"description": "#[cfg(any(…))]",
+		"scope": "source.rust"
+	},
+	"cfg3": {
+		"prefix": "cfg",
+		"body": "#[cfg_attr(${1}, ${2})]",
+		"description": "#[cfg_attr(…)]",
+		"scope": "source.rust"
+	},
+	"cfg4": {
+		"prefix": "cfg",
+		"body": "#[cfg(not(${1}))]",
+		"description": "#[cfg(not(…))]",
+		"scope": "source.rust"
+	},
+	"cfg5": {
+		"prefix": "cfg",
+		"body": "#[cfg(test)]",
+		"description": "#[cfg(test)]",
+		"scope": "source.rust"
+	},
+	"cfg6": {
+		"prefix": "cfg",
+		"body": "#[cfg(unix)]",
+		"description": "#[cfg(unix)]",
+		"scope": "source.rust"
+	},
+	"cfg7": {
+		"prefix": "cfg",
+		"body": "#[cfg(windows)]",
+		"description": "#[cfg(windows)]",
+		"scope": "source.rust"
+	},
+	"cfg8": {
+		"prefix": "cfg",
+		"body": "#[cfg(target_arch = \"x86_64\")]",
+		"description": "#[cfg(target_arch = \"x86_64\")]",
+		"scope": "source.rust"
+	},
+	"cfg9": {
+		"prefix": "cfg",
+		"body": "#[cfg(target_arch = \"x86\")]",
+		"description": "#[cfg(target_arch = \"x86\")]",
+		"scope": "source.rust"
+	},
+	"allowclippy": {
+		"prefix": "allowclippy",
+		"body": "\n#![cfg_attr(feature = \"cargo-clippy\", allow(${1}))]\n",
+		"description": "[cfg_attr(feature = \"cargo-clippy\", allow(…)]",
+		"scope": "source.rust"
+	},
+	"debug": {
+		"prefix": "debug",
+		"body": "debug!(\"${1:\\{${2::?}\\}}\"${1/([^\\{])*(\\{.*\\})?.*/(?2:, :\\);)/}$3${1/([^\\{])*(\\{.*\\})?.*/(?2:\\))/}",
+		"description": "debug!(…)",
+		"scope": "source.rust"
+	},
+	"derive": {
+		"prefix": "derive",
+		"body": "\n#[derive(Copy)]\n",
+		"description": "[derive(Copy)]",
+		"scope": "source.rust"
+	},
+	"derive1": {
+		"prefix": "derive",
+		"body": "\n#[derive(Debug)]\n",
+		"description": "[derive(Debug)]",
+		"scope": "source.rust"
+	},
+	"derive2": {
+		"prefix": "derive",
+		"body": "\n#[derive(Default)]\n",
+		"description": "[derive(Default)]",
+		"scope": "source.rust"
+	},
+	"derive3": {
+		"prefix": "derive",
+		"body": "\n#[derive(Clone)]\n",
+		"description": "[derive(Clone)]",
+		"scope": "source.rust"
+	},
+	"derive4": {
+		"prefix": "derive",
+		"body": "\n#[derive(Eq)]\n",
+		"description": "[derive(Eq)]",
+		"scope": "source.rust"
+	},
+	"derive5": {
+		"prefix": "derive",
+		"body": "\n#[derive(Hash)]\n",
+		"description": "[derive(Hash)]",
+		"scope": "source.rust"
+	},
+	"derive6": {
+		"prefix": "derive",
+		"body": "\n#[derive(Ord)]\n",
+		"description": "[derive(Ord)]",
+		"scope": "source.rust"
+	},
+	"derive7": {
+		"prefix": "derive",
+		"body": "\n#[derive(PartialEq)]\n",
+		"description": "[derive(PartialEq)]",
+		"scope": "source.rust"
+	},
+	"derive8": {
+		"prefix": "derive",
+		"body": "\n#[derive(PartialOrd)]\n",
+		"description": "[derive(PartialOrd)]",
+		"scope": "source.rust"
+	},
+	"doc": {
+		"prefix": "doc",
+		"body": "\n#[doc(hidden)]\n",
+		"description": "[doc(hidden)]",
+		"scope": "source.rust"
+	},
+	"doc1": {
+		"prefix": "doc",
+		"body": "\n#[doc(no_inline)]\n",
+		"description": "[doc(no_inline)]",
+		"scope": "source.rust"
+	},
+	"eprint": {
+		"prefix": "eprint",
+		"body": "eprint!(\"${1:\\{${2::?}\\}}\"${1/([^\\{])*(\\{.*\\})?.*/(?2:, :\\);)/}$3${1/([^\\{])*(\\{.*\\})?.*/(?2:\\);)/}",
+		"description": "eprint!(…)",
+		"scope": "source.rust"
+	},
+	"eprintln": {
+		"prefix": "eprintln",
+		"body": "eprintln!(\"${1:\\{${2::?}\\}}\"${1/([^\\{])*(\\{.*\\})?.*/(?2:, :\\);)/}$3${1/([^\\{])*(\\{.*\\})?.*/(?2:\\);)/}",
+		"description": "eprintln!(…)",
+		"scope": "source.rust"
+	},
+	"error": {
+		"prefix": "error",
+		"body": "error!(\"${1:\\{${2::?}\\}}\"${1/([^\\{])*(\\{.*\\})?.*/(?2:, :\\);)/}$3${1/([^\\{])*(\\{.*\\})?.*/(?2:\\))/}",
+		"description": "error!(…)",
+		"scope": "source.rust"
+	},
+	"feature": {
+		"prefix": "feature",
+		"body": "#![feature(${1})]",
+		"description": "#[feature(…)]",
+		"scope": "source.rust"
+	},
+	"feature1": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(advanced_slice_patterns)]\r\n",
+		"description": "[feature(advanced_slice_patterns)]",
+		"scope": "source.rust"
+	},
+	"feature2": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(asm)]\r\n",
+		"description": "[feature(asm)]",
+		"scope": "source.rust"
+	},
+	"feature3": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(associated_consts)]\r\n",
+		"description": "[feature(associated_consts)]",
+		"scope": "source.rust"
+	},
+	"feature4": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(box_patterns)]\r\n",
+		"description": "[feature(box_patterns)]",
+		"scope": "source.rust"
+	},
+	"feature5": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(box_syntax)]\r\n",
+		"description": "[feature(box_syntax)]",
+		"scope": "source.rust"
+	},
+	"feature6": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(cfg_target_vendor)]\r\n",
+		"description": "[feature(cfg_target_vendor)]",
+		"scope": "source.rust"
+	},
+	"feature7": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(concat_idents)]\r\n",
+		"description": "[feature(concat_idents)]",
+		"scope": "source.rust"
+	},
+	"feature8": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(custom_attribute)]\r\n",
+		"description": "[feature(custom_attribute)]",
+		"scope": "source.rust"
+	},
+	"feature9": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(custom_derive)]\r\n",
+		"description": "[feature(custom_derive)]",
+		"scope": "source.rust"
+	},
+	"feature10": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(intrinsics)]\r\n",
+		"description": "[feature(intrinsics)]",
+		"scope": "source.rust"
+	},
+	"feature11": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(lang_items)]\r\n",
+		"description": "[feature(lang_items)]",
+		"scope": "source.rust"
+	},
+	"feature12": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(link_args)]\r\n",
+		"description": "[feature(link_args)]",
+		"scope": "source.rust"
+	},
+	"feature13": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(link_llvm_intrinsics)]\r\n",
+		"description": "[feature(link_llvm_intrinsics)]",
+		"scope": "source.rust"
+	},
+	"feature14": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(linkage)]\r\n",
+		"description": "[feature(linkage)]",
+		"scope": "source.rust"
+	},
+	"feature15": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(log_syntax)]\r\n",
+		"description": "[feature(log_syntax)]",
+		"scope": "source.rust"
+	},
+	"feature16": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(macro_reexport)]\r\n",
+		"description": "[feature(macro_reexport)]",
+		"scope": "source.rust"
+	},
+	"feature17": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(main)]\r\n",
+		"description": "[feature(main)]",
+		"scope": "source.rust"
+	},
+	"feature18": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(no_std)]\r\n",
+		"description": "[feature(no_std)]",
+		"scope": "source.rust"
+	},
+	"feature19": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(non_ascii_idents)]\r\n",
+		"description": "[feature(non_ascii_idents)]",
+		"scope": "source.rust"
+	},
+	"feature20": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(on_unimplemented)]\r\n",
+		"description": "[feature(on_unimplemented)]",
+		"scope": "source.rust"
+	},
+	"feature21": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(optin_builtin_traits)]\r\n",
+		"description": "[feature(optin_builtin_traits)]",
+		"scope": "source.rust"
+	},
+	"feature22": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(plugin)]\r\n",
+		"description": "[feature(plugin)]",
+		"scope": "source.rust"
+	},
+	"feature23": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(plugin_registrar)]\r\n",
+		"description": "[feature(plugin_registrar)]",
+		"scope": "source.rust"
+	},
+	"feature24": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(quote)]\r\n",
+		"description": "[feature(quote)]",
+		"scope": "source.rust"
+	},
+	"feature25": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(rustc_attrs)]\r\n",
+		"description": "[feature(rustc_attrs)]",
+		"scope": "source.rust"
+	},
+	"feature26": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(rustc_diagnostic_macros)]\r\n",
+		"description": "[feature(rustc_diagnostic_macros)]",
+		"scope": "source.rust"
+	},
+	"feature27": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(simd)]\r\n",
+		"description": "[feature(simd)]",
+		"scope": "source.rust"
+	},
+	"feature28": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(simd_ffi)]\r\n",
+		"description": "[feature(simd_ffi)]",
+		"scope": "source.rust"
+	},
+	"feature29": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(slice_patterns)]\r\n",
+		"description": "[feature(slice_patterns)]",
+		"scope": "source.rust"
+	},
+	"feature30": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(start)]\r\n",
+		"description": "[feature(start)]",
+		"scope": "source.rust"
+	},
+	"feature31": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(test)]\r\n",
+		"description": "[feature(test)]",
+		"scope": "source.rust"
+	},
+	"feature32": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(thread_local)]\r\n",
+		"description": "[feature(thread_local)]",
+		"scope": "source.rust"
+	},
+	"feature33": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(trace_macros)]\r\n",
+		"description": "[feature(trace_macros)]",
+		"scope": "source.rust"
+	},
+	"feature34": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(unboxed_closures)]\r\n",
+		"description": "[feature(unboxed_closures)]",
+		"scope": "source.rust"
+	},
+	"feature35": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(unmarked_api)]\r\n",
+		"description": "[feature(unmarked_api)]",
+		"scope": "source.rust"
+	},
+	"feature36": {
+		"prefix": "feature",
+		"body": "\r\n#![feature(unsafe_no_drop_flag)]\r\n",
+		"description": "[feature(unsafe_no_drop_flag)]",
+		"scope": "source.rust"
+	},
+	"info": {
+		"prefix": "info",
+		"body": "info!(\"${1:\\{${2::?}\\}}\"${1/([^\\{])*(\\{.*\\})?.*/(?2:, :\\);)/}$3${1/([^\\{])*(\\{.*\\})?.*/(?2:\\))/}",
+		"description": "info!(…)",
+		"scope": "source.rust"
+	},
+	"macro": {
+		"prefix": "macro",
+		"body": "\n#[macro_export]\n",
+		"description": "[macro_export]",
+		"scope": "source.rust"
+	},
+	"macro1": {
+		"prefix": "macro",
+		"body": "\n#[macro_use]\n",
+		"description": "[macro_use]",
+		"scope": "source.rust"
+	},
+	"option": {
+		"prefix": "option",
+		"body": "\nOption<${0:$TM_SELECTED_TEXT}>\n",
+		"description": "Option(...)",
+		"scope": "source.rust"
+	},
+	"repr": {
+		"prefix": "repr",
+		"body": "\n#[repr(C)]\n",
+		"description": "repr(C)",
+		"scope": "source.rust"
+	},
+	"trace": {
+		"prefix": "trace",
+		"body": "trace!(\"${1:\\{${2::?}\\}}\"${1/([^\\{])*(\\{.*\\})?.*/(?2:, :\\);)/}$3${1/([^\\{])*(\\{.*\\})?.*/(?2:\\))/}",
+		"description": "trace!(…)",
+		"scope": "source.rust"
+	}
+}
